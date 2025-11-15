@@ -642,7 +642,7 @@ def main():
             bubble_rect.clamp_ip(clamp_zone)
             direction = "left" if bubble_rect.centerx >= player_x else "right"
             draw_speech_cloud(bubble_rect, direction)
-            heavy_lines = ["Es muy pesada...", "Necesito pedir ayuda."]
+            heavy_lines = ["Es muy pesada...", "No puedo solo."]
             for i, text in enumerate(heavy_lines):
                 draw_text(text, bubble_rect.centerx, bubble_rect.y + 22 + i * 22, FONT_SMALL, BLACK, center=True)
 
